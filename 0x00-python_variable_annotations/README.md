@@ -1,0 +1,2 @@
+Advanced pyyhon variable annotation
+
