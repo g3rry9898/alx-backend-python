@@ -1,9 +1,10 @@
 #!/usr/bin/env python3
 import asyncio
-import random
+from async_generator import async_generator
 
-async def async_generator():
-    for _ in range(10):
-        await asyncio.sleep(1)
-        yield random.uniform(0, 10)
+async def main():
+    async for number in async_generator():
+        print(number)
+
+asyncio.run(main())
 
